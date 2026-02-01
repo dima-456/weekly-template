@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --persimmon: #F65009;
+  --periwinkle: #EBF2FF;
+  --french-blue: #3D3B8E;
+  --yellow: #FABB3D;
+}
+
+body {
+    background: var(--periwinkle);
+    color: var(--french-blue);
+}
+
+::selection {
+    background: var(--persimmon);
+    color: var(--periwinkle);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #FF0099;
+    color: #EEE;
+    text-shadow: none;
+}
+
+section.hero {
+    padding-top: 20vh;
+    padding-bottom: 100px;
+    background-color: var(--french-blue);
+    color: var(--periwinkle);
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    margin-top: 0;
+}
+
+div.hero-wrapper {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 85%;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+}
+
+div.hero-wrapper h5 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+div.hero-wrapper h2 {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: 40px;
+}
+
+div.hero-wrapper div.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    background: var(--persimmon);
+    color: var(--periwinkle);
+    width: 100%;
+    padding-bottom: 5%;
+    margin-top: 100px;
+}
+
+footer div.flex {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    padding-top: 1em;
+}
+
+footer div.flex h5 {
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+div.hero-wrapper div.flex div.line {
+    background-color: var(--persimmon);
+    height: 1px;
+    width: 60%;
+    margin-top: 0;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 6.5em;
+    letter-spacing: -0.5vw;
+    line-height: 0.9;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--persimmon);
+}
+
+/* h1 span.persimmon {
+    color: var(--persimmon);
+    display: inline-block;
+} */
+
+section {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 85%;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+div.title {
+    font-weight: 600;
+}
+
+section p a {
+    color: var(--persimmon);
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    box-shadow: inset 0em -1px var(--persimmon);
+    transition: 1s all;
+}
+
+section.weekly p a {
+    display: inline;
+    padding: 5px 10px;
+    box-shadow: none;
+    border: 1px solid var(--persimmon)
+}
+
+section p a:hover {
+    /* color: var(--periwinkle); */
+    transition: 1s all;
+    box-shadow: inset 0em -0.2em var(--persimmon);
+}
+
+span.bold {
+    font-weight: 900;
+}
+
+section p span.semibold {
+    font-weight: 600;
+}
+
+section div {
+    margin-top: 50px;
+}
+
+section h5 {
+    font-family: 'Roboto';
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--persimmon);
+}
+
+div.row {
+    border-bottom: 1px solid var(--persimmon);
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+div.row p {
+    margin-bottom: 0;
+}
+
+div.flex-grade {
+    margin-top: 0px;
+}
+
+div.list p {
+    position: relative;
+}
+
+div.list p a {
+    display: inline;
+}
+
+div.list p:before {
+    content: '•';
+    position: absolute;
+    left: -15px;
+    top: 0px;
+}
+
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 12.25em;
+        border-bottom: 2px solid var(--persimmon);
+    }
+    section.hero {
+        padding-top: 15vh;
+    }
+    div.hero-wrapper h5 {
+        font-size: 25px;
+    }
+    div.hero-wrapper div.flex div.line {
+        width: 75%;
+        height: 1.5px;
+    }
+    div.hero-wrapper h2 {
+        font-size: 24px;
+    }
+    footer {
+        width: 100%;
+        padding-bottom: 1%;
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+    footer div.flex {
+        width: 95%;
+    }
+}
